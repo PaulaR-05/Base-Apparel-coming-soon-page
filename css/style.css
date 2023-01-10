@@ -1,0 +1,161 @@
+:root {
+  --font-family: "Josefin Sans", sans-serif;
+  --font-size-title: 50px;
+  --font-size-text: 16px;
+  --soft-red: hsl(0, 93%, 68%);
+  --desaturated-red: hsl(0, 36%, 70%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 0.2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img_container {
+  content: url("../images/hero-mobile.jpg");
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main h1 span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+main h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: grid;
+  line-height: 1.1;
+  font-size: 30px;
+  margin-top: 1rem;
+  padding: 0rem 9rem;
+}
+svg {
+  margin: 1rem;
+}
+
+main article {
+  text-align: center;
+}
+
+main article p {
+  padding: 0.5rem 3.4rem;
+  color: var(--desaturated-red);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+input {
+  position: relative;
+  border: 0.5px solid var(--dark-grayish-red);
+  padding: 0.85rem;
+  border-radius: 30px;
+  width: 60%;
+}
+
+form input::placeholder {
+  color: rgb(189, 175, 175);
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+form button {
+  position: absolute;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 1px 1px 2px rgb(197, 196, 196);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 40%;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: -68px;
+}
+@media (min-width: 768px) {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    display: none;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  .img_container {
+    content: url("../images/hero-desktop.jpg");
+    margin-top: -133px;
+    max-height: 100vh;
+    max-width: 100vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: url("../images/bg-pattern-desktop.svg") no-repeat center/cover;
+    text-align: left;
+  }
+  svg {
+    margin-left: 12rem;
+    margin-top: 5rem;
+  }
+  #container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin: 0px auto;
+  }
+
+  #container h1 {
+    text-align: left;
+    margin: 5px 50px;
+    letter-spacing: 4px;
+    font-size: 45px;
+    padding-top: 3rem;
+  }
+
+  #container p {
+    text-align: left;
+    padding: 1.1rem 8rem;
+    margin-left: 4rem;
+  }
+
+  form {
+    margin-left: 2.8rem;
+    margin-top: 0.5rem;
+  }
+
+  input {
+    border: 0.5px solid hsl(0, 6%, 76%);
+  }
+  form input::placeholder {
+    color: rgb(189, 175, 175);
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+  }
+
+  form button {
+    box-shadow: 1px 1px 2px rgb(197, 196, 196);
+  }
+}
