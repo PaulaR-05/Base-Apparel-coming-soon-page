@@ -96,7 +96,7 @@ form button {
 form label {
   position: relative;
   top: 6px;
-  left: 45%;
+  left: 42%;
 }
 
 .error {
@@ -182,7 +182,7 @@ form label {
   form p {
     position: relative;
     top: -5px;
-    right: 18%;
+    right: 20%;
     color: var(--soft-red);
   }
 
