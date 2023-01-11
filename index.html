@@ -53,18 +53,28 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form>
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              id="email"
-              required
-            />
-            <button type="submit">
-              <img src="images/icon-arrow.svg" alt="" aria-hidden="“true”" />
-            </button>
+          <form name="myForm" action="#" method="post">
+            <div>
+              <label for="email">
+                <img src="images/icon-error.svg" alt="" />
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                id="email"
+                required
+              />
+              <button type="submit">
+                <img
+                  src="images/icon-arrow.svg"
+                  alt=""
+                  aria-hidden="“true”"
+                  onclick="validateEmail()"
+                />
+              </button>
+            </div>
+            <p class="error">Please provide a valid Email address</p>
           </form>
         </div>
       </article>
@@ -74,7 +84,10 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Gabriela de Paula</a>.
+        >. Coded by
+        <a href="https://github.com/PaulaR-05/Base-Apparel-coming-soon-page"
+          >Gabriela de Paula</a
+        >.
       </p>
     </footer>
   </body>
