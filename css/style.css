@@ -51,7 +51,7 @@ main h1 {
   margin-top: 1rem;
   padding: 0rem 9rem;
 }
-svg {
+header svg {
   margin: 1rem;
 }
 
@@ -91,7 +91,7 @@ form button {
   transition: 0.3s;
   margin-left: -68px;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .attribution {
     font-size: 11px;
     text-align: center;
@@ -100,12 +100,7 @@ form button {
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
-  .img_container {
-    content: url("../images/hero-desktop.jpg");
-    margin-top: -133px;
-    max-height: 100vh;
-    max-width: 100vh;
-  }
+
   * {
     margin: 0;
     padding: 0;
@@ -113,49 +108,43 @@ form button {
   }
   body {
     background: url("../images/bg-pattern-desktop.svg") no-repeat center/cover;
-    text-align: left;
   }
-  svg {
-    margin-left: 12rem;
-    margin-top: 5rem;
+  header {
+    width: 30%;
+    margin-top: 43px;
   }
+
+  header svg {
+    margin-left: 170px;
+  }
+  .img_container {
+    content: url("../images/hero-desktop.jpg");
+    max-height: 100vh;
+    width: 60%;
+    margin-top: -112px;
+  }
+
   #container {
-    width: 100%;
+    text-align: left;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    margin: 0px auto;
   }
 
   #container h1 {
-    text-align: left;
-    margin: 5px 50px;
-    letter-spacing: 4px;
-    font-size: 45px;
-    padding-top: 3rem;
+    width: 50%;
+    font-size: 50px;
+    margin-left: 28px;
+    margin-top: 50px;
   }
 
   #container p {
-    text-align: left;
-    padding: 1.1rem 8rem;
-    margin-left: 4rem;
+    width: 80%;
+    padding-left: 175px;
+    margin-top: 5px;
   }
 
   form {
-    margin-left: 2.8rem;
-    margin-top: 0.5rem;
-  }
-
-  input {
-    border: 0.5px solid hsl(0, 6%, 76%);
-  }
-  form input::placeholder {
-    color: rgb(189, 175, 175);
-    letter-spacing: 0.1rem;
-    font-weight: 400;
-  }
-
-  form button {
-    box-shadow: 1px 1px 2px rgb(197, 196, 196);
+    padding-left: 170px;
+    margin-top: 10px;
   }
 }
