@@ -55,12 +55,12 @@
           </p>
           <form name="myForm" action="#" method="post">
             <div>
-              <label for="email">
-                <img src="images/icon-error.svg" alt="" />
+              <label for="femail">
+                <img src="images/icon-error.svg" alt="" class="disable" />
               </label>
               <input
                 type="email"
-                name="email"
+                name="femail"
                 placeholder="Email Address"
                 id="email"
                 required
@@ -70,11 +70,11 @@
                   src="images/icon-arrow.svg"
                   alt=""
                   aria-hidden="“true”"
-                  onclick="validateEmail()"
+                  onclick="validate()"
                 />
               </button>
+              <p class="error"></p>
             </div>
-            <p class="error">Please provide a valid Email address</p>
           </form>
         </div>
       </article>

@@ -96,7 +96,15 @@ form button {
 form label {
   position: relative;
   top: 6px;
-  left: 50%;
+  left: 45%;
+}
+
+.error {
+  color: var(--soft-red);
+}
+
+.disable {
+  display: none;
 }
 @media (min-width: 800px) {
   .attribution {
@@ -151,7 +159,7 @@ form label {
   }
 
   form {
-    padding-left: 170px;
+    padding-left: 165px;
     margin-top: 10px;
   }
   form input {
@@ -169,6 +177,16 @@ form label {
   form label {
     position: relative;
     top: 5px;
-    left: 50%;
+  }
+
+  form p {
+    position: relative;
+    top: -5px;
+    right: 18%;
+    color: var(--soft-red);
+  }
+
+  .disable {
+    display: none;
   }
 }
