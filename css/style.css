@@ -23,7 +23,6 @@
 }
 .img_container {
   content: url("../images/hero-mobile.jpg");
-  max-height: 45vh;
   max-width: 100%;
   width: 100%;
 }
@@ -62,7 +61,7 @@ main article {
 
 main article p {
   text-align: center;
-  padding: 0.7rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   color: var(--desaturated-red);
   line-height: 1.5;
   font-weight: 400;
