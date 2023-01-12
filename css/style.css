@@ -95,8 +95,8 @@ form button {
 
 form label {
   position: relative;
-  top: 6px;
-  left: 42%;
+  top: 7.5px;
+  left: 50%;
 }
 
 .error {
